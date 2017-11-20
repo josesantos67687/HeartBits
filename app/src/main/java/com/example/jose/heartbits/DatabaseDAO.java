@@ -17,6 +17,10 @@ public class DatabaseDAO extends Thread {
     String username = "root";
     String password = "";
 
+
+    public DatabaseDAO() throws SQLException {
+    }
+
     public void run() {
         try {
 

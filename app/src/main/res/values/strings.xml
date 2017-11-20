@@ -15,4 +15,8 @@
 
     <string name="Procedimento1">Procedimentos1</string>
     <string name="Procedimento2">Procedimentos2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

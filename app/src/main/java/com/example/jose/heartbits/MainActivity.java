@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-            new DatabaseDAO().start();
+            //new DatabaseDAO().start();
 
         username = (EditText) findViewById(R.id.username);
         username.setOnClickListener(this);
