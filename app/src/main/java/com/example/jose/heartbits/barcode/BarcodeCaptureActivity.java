@@ -32,11 +32,16 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
+import android.view.View;
 import android.widget.Toast;
 
+import com.example.jose.heartbits.Operacao;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.CommonStatusCodes;
@@ -89,17 +94,25 @@ public final class BarcodeCaptureActivity extends AppCompatActivity
         }
     }
 
+
     @Override
     public void onDetectedQrCode(Barcode barcode) {
         if (barcode != null) {
             Intent intent = new Intent();
             intent.putExtra(BarcodeObject, barcode);
             setResult(CommonStatusCodes.SUCCESS, intent);
-            System.out.println("String ---------------------" + barcode.displayValue);
+            System.out.println(barcode.displayValue);
 
+            Intent resultIntent = new Intent();
+            // TODO Add extras or a data URI to this intent as appropriate.
+            resultIntent.putExtra( "key", barcode.displayValue);
+            setResult(Operacao.RESULT_OK, resultIntent);
             finish();
+
         }
     }
+
+
 
     // Handles the requesting of the camera permission.
     private void requestCameraPermission() {

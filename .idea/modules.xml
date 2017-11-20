@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HB.iml" filepath="$PROJECT_DIR$/HB.iml" />
       <module fileurl="file://C:\Users\Samuel\Desktop\HeartBits\HB.iml" filepath="C:\Users\Samuel\Desktop\HeartBits\HB.iml" />
       <module fileurl="file://$PROJECT_DIR$/HeartBits.iml" filepath="$PROJECT_DIR$/HeartBits.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
